@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.heady.androidassessment.view.ProductDetailActivity"
+    tools:showIn="@layout/activity_product_detail"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin">
+<TextView  android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/product_name"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:text="@string/app_name"
+
+    android:padding="@dimen/activity_horizontal_margin"
+    android:textSize="@dimen/details_heading"
+    android:gravity="center_horizontal"
+    android:textStyle="bold"/>
+    <Spinner
+        android:id="@+id/size_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/product_name"
+        android:layout_gravity="center_horizontal"
+        android:padding="@dimen/activity_horizontal_margin"/>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/size_spinner"
+        android:id="@+id/linlay_colors"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/activity_horizontal_margin"/>
+
+    <TextView  android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/size_spinner"
+        android:id="@+id/txt_price"
+        android:text="Price"
+        android:textSize="@dimen/details_heading"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:gravity="center_horizontal"/>
+
+    <TextView  android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_price"
+        android:id="@+id/txt_most_viewed"
+        android:text="Most Viewed:"
+
+        android:padding="@dimen/activity_horizontal_margin"
+        android:gravity="center_horizontal"/>
+    <TextView  android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_most_viewed"
+        android:id="@+id/txt_most_ordered"
+        android:text="Most Viewed:"
+
+        android:padding="@dimen/activity_horizontal_margin"
+        android:gravity="center_horizontal"/>
+    <TextView  android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_most_ordered"
+        android:id="@+id/txt_most_shared"
+        android:text="Most Viewed:"
+
+        android:padding="@dimen/activity_horizontal_margin"
+        android:gravity="center_horizontal"/>
+</LinearLayout>
